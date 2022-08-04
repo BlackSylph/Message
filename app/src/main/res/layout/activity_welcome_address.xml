@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.FirstTimeInit.WelcomeAddressActivity">
+
+    <ImageView
+        android:id="@+id/welcomeAddressImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="@dimen/activity_pager_button_width"
+        android:src="@drawable/app_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:text="@string/welcome_address"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeAddressImageView" />
+
+    <RadioGroup
+        android:id="@+id/welcomeAddressRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_medium"
+        android:layout_marginStart="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeAddressTextView"
+        android:checkedButton="@id/welcomeAddressAutoRadioButton">
+
+        <RadioButton
+            android:id="@+id/welcomeAddressAutoRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_address_auto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <RadioButton
+            android:id="@+id/welcomeAddressManualRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_address_manual"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/welcomeAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_pill"
+        android:hint="@string/welcome_address"
+        android:layout_marginStart="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_large"
+        android:maxLines="1"
+        android:paddingStart="@dimen/activity_margin_medium"
+        android:paddingTop="@dimen/activity_margin_medium"
+        android:paddingEnd="@dimen/activity_margin_medium"
+        android:paddingBottom="@dimen/activity_margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeAddressRadioGroup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_medium"
+        android:paddingStart="@dimen/activity_margin_medium"
+        android:paddingEnd="@dimen/activity_margin_medium"
+        android:gravity="center"
+        android:text="@string/welcome_address_hint"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeAddressEditText"
+        app:layout_constraintStart_toStartOf="@+id/welcomeAddressEditText"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeAddressEditText" />
+
+    <Button
+        android:id="@+id/welcomeAddressPreviousButton"
+        android:layout_width="@dimen/activity_pager_button_width"
+        android:layout_height="@dimen/activity_pager_button_height"
+        android:layout_marginBottom="@dimen/activity_margin_medium"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:text="@string/welcome_button_previous"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/welcomeAddressNextButton"
+        android:layout_width="@dimen/activity_pager_button_width"
+        android:layout_height="@dimen/activity_pager_button_height"
+        android:layout_marginBottom="@dimen/activity_margin_medium"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        android:text="@string/welcome_button_next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

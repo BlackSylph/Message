@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin_tiny">5dp</dimen>
+    <dimen name="activity_margin_short">8dp</dimen>
+    <dimen name="activity_margin_medium">16dp</dimen>
+    <dimen name="activity_margin_large">23dp</dimen>
+    <dimen name="activity_margin_huge">50dp</dimen>
+    <dimen name="activity_pager_button_height">50dp</dimen>
+    <dimen name="activity_pager_button_width">120dp</dimen>
+</resources>

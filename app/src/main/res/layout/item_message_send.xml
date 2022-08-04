@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageSendLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="@dimen/activity_margin_medium">
+
+    <TextView
+        android:id="@+id/messageSendTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/activity_margin_medium"
+        android:paddingTop="@dimen/activity_margin_medium"
+        android:paddingEnd="@dimen/activity_margin_medium"
+        android:paddingBottom="@dimen/activity_margin_tiny" />
+
+    <TextView
+        android:id="@+id/messageSendTextTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageSendTimeTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        android:background="@drawable/shape_chat_send"
+        android:paddingStart="@dimen/activity_margin_medium"
+        android:paddingTop="@dimen/activity_margin_short"
+        android:paddingEnd="@dimen/activity_margin_medium"
+        android:paddingBottom="@dimen/activity_margin_short"
+        android:textColor="@color/blue_dark"
+        android:textSize="17sp" />
+
+</RelativeLayout>

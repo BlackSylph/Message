@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.OptionActivity">
+
+    <ImageButton
+        android:id="@+id/messageBackImageButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/optionTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/optionTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/messageBackImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messageBackImageButton" />
+
+    <LinearLayout
+        android:id="@+id/optionFirstNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionTitleTextView">
+
+        <TextView
+            android:id="@+id/optionFirstNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_margin_medium"
+            android:text="@string/first_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/optionFirstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_rectangle"
+            android:hint="@string/first_name"
+            android:paddingStart="@dimen/activity_margin_medium"
+            android:paddingTop="@dimen/activity_margin_medium"
+            android:paddingEnd="@dimen/activity_margin_medium"
+            android:paddingBottom="@dimen/activity_margin_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionLastNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionFirstNameLayout">
+
+        <TextView
+            android:id="@+id/optionLastNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_margin_medium"
+            android:text="@string/last_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/optionLastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_rectangle"
+            android:hint="@string/last_name"
+            android:paddingStart="@dimen/activity_margin_medium"
+            android:paddingTop="@dimen/activity_margin_medium"
+            android:paddingEnd="@dimen/activity_margin_medium"
+            android:paddingBottom="@dimen/activity_margin_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionAddressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionLastNameLayout">
+
+        <TextView
+            android:id="@+id/optionAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_margin_medium"
+            android:text="@string/address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/optionAddressRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/optionAddressAutoRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_address_auto" />
+
+            <RadioButton
+                android:id="@+id/optionAddressManualRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_address_manual" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/optionAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Πληκτρολογίστε τη διεύθυνση κατοικίας σας"
+            android:background="@drawable/input_rectangle"
+            android:clickable="true"
+            android:hint="@string/address"
+            android:paddingStart="@dimen/activity_margin_medium"
+            android:paddingTop="@dimen/activity_margin_medium"
+            android:paddingEnd="@dimen/activity_margin_medium"
+            android:paddingBottom="@dimen/activity_margin_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionAddressLayout">
+
+        <TextView
+            android:id="@+id/optionTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_margin_medium"
+            android:text="@string/time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/optionTimeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/optionTimeAutoRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_time_auto" />
+
+            <RadioButton
+                android:id="@+id/optionTimeManualRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_time_manual" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionReasonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_marginEnd="@dimen/activity_margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionTimeLayout">
+
+        <TextView
+            android:id="@+id/optionReasonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_margin_medium"
+            android:text="@string/reason"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/optionReasonSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_rectangle"
+            android:paddingStart="@dimen/activity_margin_medium"
+            android:paddingTop="@dimen/activity_margin_medium"
+            android:paddingEnd="@dimen/activity_margin_tiny"
+            android:paddingBottom="@dimen/activity_margin_medium" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/optionSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:text="@string/save_button"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionReasonLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

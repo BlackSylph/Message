@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Message</string>
+    <string name="message_input_text_input">Text message</string>
+    <string name="start_chat_text_view">Start chat</string>
+    <string name="search_text_view">Search conversations</string>
+    <string name="_13033">13033</string>
+    <string name="welcome_welcome">Καλωσήρθατε</string>
+    <string name="welcome_requirements">Χρειάζομαι κάποιες πληροφορίες για να λειτουργήσω σωστά</string>
+    <string name="welcome_first_name">Εισάγετε όνομα</string>
+    <string name="first_name">Όνομα</string>
+    <string name="welcome_last_name">Εισάγετε επίθετο</string>
+    <string name="last_name">Επίθετο</string>
+    <string name="welcome_address">Διεύθυνση κατοικίας</string>
+    <string name="address">Διεύθυνση κατοικίας</string>
+    <string name="welcome_reason">Θέλετε κάποιον συγκεριμένο κωδικό μετακίνησης?</string>
+    <string name="welcome_button_previous">Πισω</string>
+    <string name="welcome_button_next">Επομενο</string>
+    <string name="welcome_button_finish">Τελος</string>
+    <string name="welcome_finish_title">Είστε έτοιμοι!</string>
+    <string name="optionTitle">Αλλαγή στοιχείων</string>
+    <string name="save_button">Αποθηκευση</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="welcome_address_auto">Αυτόματα</string>
+    <string name="welcome_address_manual">Χειροκίνητα</string>
+    <string name="welcome_time_auto">Λίγα λεπτά πριν (προεπιλογή με την αυτόματη διεύθυνση κατοικίας)</string>
+    <string name="welcome_time_manual">Μισή ώρα πριν</string>
+    <string name="time">Ώρα μηνύματος</string>
+    <string name="reason">Κωδικός μετακίνησης</string>
+    <string name="welcome_reason_hint">Ο κωδικός 2 σας επιτρέπει να μετακινήστε οπουδήποτε ακόμα και με αυτοκίνητο. Το Σάββατο μετά τις 21:00 και όλη την Κυριακή ο προεπιλεγμένος κωδικός αλλάζει σε 1.</string>
+    <string name="welcome_time">Τι ώρα θέλετε να φαίνεται ότι στάλθηκε το μήνυμα?</string>
+    <string name="welcome_address_hint">Για να λειτουργεί η αυτόματη διεύθυνση κατοικίας θα πρέπει να έχετε ανοιχτή την Τοποθεσία και πρόσβαση στο Internet.</string>
+    <integer-array name="spinner_reason">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+</resources>
